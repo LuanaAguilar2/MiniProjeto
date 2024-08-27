@@ -1,0 +1,224 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+input,
+select,
+textarea {
+
+    font-family: "Heebo", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+body {
+    background: linear-gradient(#a3428e, #181e63);
+    height: 99vh;
+}
+
+main {
+    height: 85%;
+}
+
+footer {
+    display: flex;
+    height: 6%;
+    background-color: #f0e6e6;
+}
+
+header {
+    background-color: #f0e6e6;
+    height: 10%;
+}
+
+header #barnav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    margin: 0 auto;
+    height: 50px;
+}
+
+header #barnav .nav-brand {
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: rgb(5, 13, 116);
+}
+
+header #barnav .nav-lista {
+    list-style: none;
+    display: flex;
+    gap: 31px;
+}
+
+header #barnav .nav-lista .nav-itens {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+header #barnav .nav-lista .nav-itens a.active {
+    border-bottom: 1px solid black;
+    color: #b221cf;
+}
+
+header #barnav .nav-lista .nav-itens a:hover {
+    color: #4d56bd;
+}
+
+header #barnav .nav-lista .nav-itens a {
+    text-decoration: none;
+}
+
+.imagem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+#textrede {
+    display: flex;
+    justify-content: center;
+}
+
+.linkedin {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 50px;
+}
+
+.github {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 50px;
+}
+
+#biografia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#atividade {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#habilidades {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#main-habilidades {
+    height: 76%;
+}
+
+#P1atividade {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilos Responsivos */
+@media (max-width: 768px) {
+    body {
+        height: auto;
+        /* 100vh menos a altura do header e footer */
+    }
+
+    header {
+        background-color: #f0e6e6;
+        height: 15%;
+    }
+
+    main {
+        height: 100%;
+        /* 100vh menos a altura do header e footer */
+    }
+
+    header #barnav .nav-lista {
+        padding-bottom: 10px;
+    }
+
+    header #barnav {
+        flex-direction: column;
+        height: auto;
+    }
+
+    header #barnav .nav-lista {
+        align-items: center;
+        gap: 10px;
+    }
+
+    header #barnav .nav-lista .nav-itens {
+        font-size: 18px;
+    }
+
+    .imagem,
+    #biografia,
+    #atividade,
+    #habilidades,
+    #P1atividade {
+        margin: 10px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    footer {
+        height: 8%;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        height: auto;
+        /* 100vh menos a altura do header e footer */
+    }
+
+    main {
+        height: auto;
+        /* 100vh menos a altura do header e footer */
+    }
+
+    header #barnav {
+        flex-direction: column;
+        height: auto;
+        padding: 0;
+    }
+
+    header #barnav .nav-brand {
+        font-size: 1.2rem;
+    }
+
+    header #barnav .nav-lista .nav-itens {
+        font-size: 16px;
+    }
+
+    header #barnav .nav-lista .nav-itens {
+        font-size: 15px;
+    }
+
+    header #barnav .nav-lista {
+        padding-bottom: 10px;
+    }
+
+    .imagem,
+    #biografia,
+    #atividade,
+    #habilidades,
+    #P1atividade {
+        margin: 5px;
+    }
+}
